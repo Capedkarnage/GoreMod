@@ -26,6 +26,8 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
+import com.github.capedkarnage.goremod.init.GoremodModParticleTypes;
+
 @Mod("goremod")
 public class GoremodMod {
 	public static final Logger LOGGER = LogManager.getLogger(GoremodMod.class);
@@ -36,6 +38,8 @@ public class GoremodMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		GoremodModParticleTypes.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

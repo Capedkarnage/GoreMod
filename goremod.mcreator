@@ -1,5 +1,136 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "EntityHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/procedures/EntityHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "Hit1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hit_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/Hit1Particle.java",
+          "src/main/resources/assets/goremod/particles/hit_1.json"
+        ]
+      },
+      "path": "~/Particle/Hit/Regular"
+    },
+    {
+      "name": "Hit2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hit_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goremod/particles/hit_2.json",
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/Hit2Particle.java"
+        ]
+      },
+      "path": "~/Particle/Hit/Regular"
+    },
+    {
+      "name": "Hit3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hit_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goremod/particles/hit_3.json",
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/Hit3Particle.java"
+        ]
+      },
+      "path": "~/Particle/Hit/Regular"
+    },
+    {
+      "name": "Hit4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hit_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goremod/particles/hit_4.json",
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/Hit4Particle.java"
+        ]
+      },
+      "path": "~/Particle/Hit/Regular"
+    },
+    {
+      "name": "RegularHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/procedures/RegularHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
@@ -9,7 +140,26 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Particle",
+        "children": [
+          {
+            "name": "Hit",
+            "children": [
+              {
+                "name": "Regular",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Procedure",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "goremod",
