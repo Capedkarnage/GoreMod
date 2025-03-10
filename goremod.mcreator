@@ -51,7 +51,7 @@
           "src/main/resources/assets/goremod/particles/hit_1.json"
         ]
       },
-      "path": "~/Particle/Hit/Regular"
+      "path": "~/Particle/Regular"
     },
     {
       "name": "Hit2",
@@ -65,7 +65,7 @@
           "src/main/java/com/github/capedkarnage/goremod/client/particle/Hit2Particle.java"
         ]
       },
-      "path": "~/Particle/Hit/Regular"
+      "path": "~/Particle/Regular"
     },
     {
       "name": "Hit3",
@@ -79,7 +79,7 @@
           "src/main/java/com/github/capedkarnage/goremod/client/particle/Hit3Particle.java"
         ]
       },
-      "path": "~/Particle/Hit/Regular"
+      "path": "~/Particle/Regular"
     },
     {
       "name": "Hit4",
@@ -93,7 +93,7 @@
           "src/main/java/com/github/capedkarnage/goremod/client/particle/Hit4Particle.java"
         ]
       },
-      "path": "~/Particle/Hit/Regular"
+      "path": "~/Particle/Regular"
     },
     {
       "name": "RegularHit",
@@ -189,7 +189,7 @@
           "src/main/resources/assets/goremod/particles/skeleton_hit_1.json"
         ]
       },
-      "path": "~/Particle/Hit/Skeleton"
+      "path": "~/Particle/Skeleton"
     },
     {
       "name": "SkeletonHit2",
@@ -203,7 +203,7 @@
           "src/main/resources/assets/goremod/particles/skeleton_hit_2.json"
         ]
       },
-      "path": "~/Particle/Hit/Skeleton"
+      "path": "~/Particle/Skeleton"
     },
     {
       "name": "SkeletonHit3",
@@ -217,7 +217,7 @@
           "src/main/resources/assets/goremod/particles/skeleton_hit_3.json"
         ]
       },
-      "path": "~/Particle/Hit/Skeleton"
+      "path": "~/Particle/Skeleton"
     },
     {
       "name": "SkeletonHit4",
@@ -231,7 +231,7 @@
           "src/main/resources/assets/goremod/particles/skeleton_hit_4.json"
         ]
       },
-      "path": "~/Particle/Hit/Skeleton"
+      "path": "~/Particle/Skeleton"
     },
     {
       "name": "CreeperHit1",
@@ -245,7 +245,7 @@
           "src/main/java/com/github/capedkarnage/goremod/client/particle/CreeperHit1Particle.java"
         ]
       },
-      "path": "~/Particle/Hit/Creeper"
+      "path": "~/Particle/Creeper"
     },
     {
       "name": "CreeperHit2",
@@ -259,7 +259,7 @@
           "src/main/resources/assets/goremod/particles/creeper_hit_2.json"
         ]
       },
-      "path": "~/Particle/Hit/Creeper"
+      "path": "~/Particle/Creeper"
     },
     {
       "name": "CreeperHit3",
@@ -273,7 +273,7 @@
           "src/main/java/com/github/capedkarnage/goremod/client/particle/CreeperHit3Particle.java"
         ]
       },
-      "path": "~/Particle/Hit/Creeper"
+      "path": "~/Particle/Creeper"
     },
     {
       "name": "CreeperHit4",
@@ -287,7 +287,7 @@
           "src/main/resources/assets/goremod/particles/creeper_hit_4.json"
         ]
       },
-      "path": "~/Particle/Hit/Creeper"
+      "path": "~/Particle/Creeper"
     },
     {
       "name": "CreeperHit",
@@ -339,21 +339,16 @@
         "name": "Particle",
         "children": [
           {
-            "name": "Hit",
-            "children": [
-              {
-                "name": "Regular",
-                "children": []
-              },
-              {
-                "name": "Skeleton",
-                "children": []
-              },
-              {
-                "name": "Creeper",
-                "children": []
-              }
-            ]
+            "name": "Regular",
+            "children": []
+          },
+          {
+            "name": "Skeleton",
+            "children": []
+          },
+          {
+            "name": "Creeper",
+            "children": []
           }
         ]
       },

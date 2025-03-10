@@ -9,6 +9,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.monster.Skeleton;
+import net.minecraft.world.entity.monster.MagmaCube;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.CaveSpider;
 import net.minecraft.world.entity.monster.Blaze;
@@ -40,7 +41,7 @@ public class EntityHitProcedure {
 			RegularHitProcedure.execute(world, x, y, z, amount);
 		} else if (entity instanceof Creeper || entity instanceof WitherSkeleton) {
 			CreeperHitProcedure.execute(world, x, y, z, amount);
-		} else if (entity instanceof Blaze) {
+		} else if (entity instanceof Blaze || entity instanceof MagmaCube) {
 			RegularHitProcedure.execute(world, x, y, z, amount);
 		} else {
 			RegularHitProcedure.execute(world, x, y, z, amount);
