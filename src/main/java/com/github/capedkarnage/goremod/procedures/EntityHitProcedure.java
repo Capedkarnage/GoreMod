@@ -6,10 +6,13 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.monster.WitherSkeleton;
+import net.minecraft.world.entity.monster.Spider;
+import net.minecraft.world.entity.monster.Skeleton;
+import net.minecraft.world.entity.monster.Creeper;
+import net.minecraft.world.entity.monster.CaveSpider;
+import net.minecraft.world.entity.monster.Blaze;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.TagKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
 
 import javax.annotation.Nullable;
 
@@ -29,7 +32,17 @@ public class EntityHitProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, double amount) {
 		if (entity == null)
 			return;
-		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("minecraft:skeletons")))) {
+		if (entity instanceof Skeleton) {
+			SkeletonHitProcedure.execute(world, x, y, z, amount);
+		} else if (entity instanceof Spider) {
+			RegularHitProcedure.execute(world, x, y, z, amount);
+		} else if (entity instanceof CaveSpider) {
+			RegularHitProcedure.execute(world, x, y, z, amount);
+		} else if (entity instanceof Creeper || entity instanceof WitherSkeleton) {
+			CreeperHitProcedure.execute(world, x, y, z, amount);
+		} else if (entity instanceof Blaze) {
+			RegularHitProcedure.execute(world, x, y, z, amount);
+		} else {
 			RegularHitProcedure.execute(world, x, y, z, amount);
 		}
 	}

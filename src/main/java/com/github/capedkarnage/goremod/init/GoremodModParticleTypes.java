@@ -19,4 +19,12 @@ public class GoremodModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> HIT_2 = REGISTRY.register("hit_2", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> HIT_3 = REGISTRY.register("hit_3", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> HIT_4 = REGISTRY.register("hit_4", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> SKELETON_HIT_1 = REGISTRY.register("skeleton_hit_1", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> SKELETON_HIT_2 = REGISTRY.register("skeleton_hit_2", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> SKELETON_HIT_3 = REGISTRY.register("skeleton_hit_3", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> SKELETON_HIT_4 = REGISTRY.register("skeleton_hit_4", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> CREEPER_HIT_1 = REGISTRY.register("creeper_hit_1", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> CREEPER_HIT_2 = REGISTRY.register("creeper_hit_2", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> CREEPER_HIT_3 = REGISTRY.register("creeper_hit_3", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> CREEPER_HIT_4 = REGISTRY.register("creeper_hit_4", () -> new SimpleParticleType(false));
 }

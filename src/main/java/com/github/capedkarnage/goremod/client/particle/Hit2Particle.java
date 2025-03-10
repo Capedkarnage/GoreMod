@@ -36,7 +36,7 @@ public class Hit2Particle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.lifetime = (int) Math.max(1, 95 + (this.random.nextInt(20) - 10));
+		this.lifetime = (int) Math.max(1, 195 + (this.random.nextInt(20) - 10));
 		this.gravity = 0.5f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;

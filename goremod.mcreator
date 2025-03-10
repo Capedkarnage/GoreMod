@@ -129,6 +129,200 @@
         ]
       },
       "path": "~/Procedure"
+    },
+    {
+      "name": "Config",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/configuration/ConfigConfiguration.java"
+        ]
+      }
+    },
+    {
+      "name": "SkeletonHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/procedures/SkeletonHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "SkeletonHit1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_hit_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SkeletonHit1Particle.java",
+          "src/main/resources/assets/goremod/particles/skeleton_hit_1.json"
+        ]
+      },
+      "path": "~/Particle/Hit/Skeleton"
+    },
+    {
+      "name": "SkeletonHit2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_hit_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SkeletonHit2Particle.java",
+          "src/main/resources/assets/goremod/particles/skeleton_hit_2.json"
+        ]
+      },
+      "path": "~/Particle/Hit/Skeleton"
+    },
+    {
+      "name": "SkeletonHit3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_hit_3",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SkeletonHit3Particle.java",
+          "src/main/resources/assets/goremod/particles/skeleton_hit_3.json"
+        ]
+      },
+      "path": "~/Particle/Hit/Skeleton"
+    },
+    {
+      "name": "SkeletonHit4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_hit_4",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SkeletonHit4Particle.java",
+          "src/main/resources/assets/goremod/particles/skeleton_hit_4.json"
+        ]
+      },
+      "path": "~/Particle/Hit/Skeleton"
+    },
+    {
+      "name": "CreeperHit1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_hit_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goremod/particles/creeper_hit_1.json",
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/CreeperHit1Particle.java"
+        ]
+      },
+      "path": "~/Particle/Hit/Creeper"
+    },
+    {
+      "name": "CreeperHit2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_hit_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/CreeperHit2Particle.java",
+          "src/main/resources/assets/goremod/particles/creeper_hit_2.json"
+        ]
+      },
+      "path": "~/Particle/Hit/Creeper"
+    },
+    {
+      "name": "CreeperHit3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_hit_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goremod/particles/creeper_hit_3.json",
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/CreeperHit3Particle.java"
+        ]
+      },
+      "path": "~/Particle/Hit/Creeper"
+    },
+    {
+      "name": "CreeperHit4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_hit_4",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/CreeperHit4Particle.java",
+          "src/main/resources/assets/goremod/particles/creeper_hit_4.json"
+        ]
+      },
+      "path": "~/Particle/Hit/Creeper"
+    },
+    {
+      "name": "CreeperHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/procedures/CreeperHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
     }
   ],
   "variable_elements": [],
@@ -149,6 +343,14 @@
             "children": [
               {
                 "name": "Regular",
+                "children": []
+              },
+              {
+                "name": "Skeleton",
+                "children": []
+              },
+              {
+                "name": "Creeper",
                 "children": []
               }
             ]

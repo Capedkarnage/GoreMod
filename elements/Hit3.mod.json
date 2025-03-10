@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "generic_5",
+    "texture": "hit3",
     "animate": false,
     "frameDuration": 1,
     "width": 0.2,
@@ -12,7 +12,7 @@
     },
     "speedFactor": 1.0,
     "gravity": 0.5,
-    "maxAge": 105,
+    "maxAge": 205,
     "maxAgeDiff": 5,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,

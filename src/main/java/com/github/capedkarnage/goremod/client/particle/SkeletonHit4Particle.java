@@ -13,26 +13,26 @@ import net.minecraft.client.particle.Particle;
 import net.minecraft.client.multiplayer.ClientLevel;
 
 @OnlyIn(Dist.CLIENT)
-public class Hit3Particle extends TextureSheetParticle {
-	public static Hit3ParticleProvider provider(SpriteSet spriteSet) {
-		return new Hit3ParticleProvider(spriteSet);
+public class SkeletonHit4Particle extends TextureSheetParticle {
+	public static SkeletonHit4ParticleProvider provider(SpriteSet spriteSet) {
+		return new SkeletonHit4ParticleProvider(spriteSet);
 	}
 
-	public static class Hit3ParticleProvider implements ParticleProvider<SimpleParticleType> {
+	public static class SkeletonHit4ParticleProvider implements ParticleProvider<SimpleParticleType> {
 		private final SpriteSet spriteSet;
 
-		public Hit3ParticleProvider(SpriteSet spriteSet) {
+		public SkeletonHit4ParticleProvider(SpriteSet spriteSet) {
 			this.spriteSet = spriteSet;
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-			return new Hit3Particle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			return new SkeletonHit4Particle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}
 	}
 
 	private final SpriteSet spriteSet;
 
-	protected Hit3Particle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
+	protected SkeletonHit4Particle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);

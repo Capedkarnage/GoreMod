@@ -13,30 +13,30 @@ import net.minecraft.client.particle.Particle;
 import net.minecraft.client.multiplayer.ClientLevel;
 
 @OnlyIn(Dist.CLIENT)
-public class Hit3Particle extends TextureSheetParticle {
-	public static Hit3ParticleProvider provider(SpriteSet spriteSet) {
-		return new Hit3ParticleProvider(spriteSet);
+public class CreeperHit2Particle extends TextureSheetParticle {
+	public static CreeperHit2ParticleProvider provider(SpriteSet spriteSet) {
+		return new CreeperHit2ParticleProvider(spriteSet);
 	}
 
-	public static class Hit3ParticleProvider implements ParticleProvider<SimpleParticleType> {
+	public static class CreeperHit2ParticleProvider implements ParticleProvider<SimpleParticleType> {
 		private final SpriteSet spriteSet;
 
-		public Hit3ParticleProvider(SpriteSet spriteSet) {
+		public CreeperHit2ParticleProvider(SpriteSet spriteSet) {
 			this.spriteSet = spriteSet;
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-			return new Hit3Particle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			return new CreeperHit2Particle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}
 	}
 
 	private final SpriteSet spriteSet;
 
-	protected Hit3Particle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
+	protected CreeperHit2Particle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.lifetime = (int) Math.max(1, 205 + (this.random.nextInt(10) - 5));
+		this.lifetime = (int) Math.max(1, 195 + (this.random.nextInt(20) - 10));
 		this.gravity = 0.5f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
