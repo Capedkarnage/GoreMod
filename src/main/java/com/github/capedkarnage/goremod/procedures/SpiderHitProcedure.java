@@ -12,7 +12,7 @@ import java.util.Random;
 import com.github.capedkarnage.goremod.init.GoremodModParticleTypes;
 import com.github.capedkarnage.goremod.configuration.ConfigConfiguration;
 
-public class CreeperHitProcedure {
+public class SpiderHitProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double amount) {
 		if (entity == null)
 			return;
@@ -41,33 +41,33 @@ public class CreeperHitProcedure {
 		if (!(MixRandom1 == 0 && MixRandom2 == 0 && MixRandom3 == 0 && MixRandom4 == 0)) {
 			if (MixRandom1 == 1) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_1.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 6, 8) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_1.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 6, 8) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			}
 			if (MixRandom2 == 1) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_2.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 2, 5) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_2.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 2, 5) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			}
 			if (MixRandom3 == 1) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_3.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 0, 3) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_3.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 0, 3) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			}
 			if (MixRandom4 == 1) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_4.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 0, 4) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_4.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 0, 4) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			}
 		} else {
 			if (Random == 1) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_1.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 4, 8) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_1.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 4, 8) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			} else if (Random == 2) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_2.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 6, 11) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_2.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 6, 11) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			} else if (Random == 3) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_3.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 2, 5) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_3.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 2, 5) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			} else if (Random == 4) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.CREEPER_HIT_4.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 3, 6) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
+					_level.sendParticles((SimpleParticleType) (GoremodModParticleTypes.SPIDER_HIT_4.get()), x, Y, z, (int) (Mth.nextInt(RandomSource.create(), 3, 6) * AdjustedAmount), ParticalWidth, ParticalHeight, ParticalWidth, ParticleSpeed);
 			}
 		}
 	}

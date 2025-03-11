@@ -12,6 +12,10 @@
         ],
         "dependencies": [
           {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -107,6 +111,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "amount",
             "type": "number"
           },
@@ -141,41 +149,6 @@
           "src/main/java/com/github/capedkarnage/goremod/configuration/ConfigConfiguration.java"
         ]
       }
-    },
-    {
-      "name": "SkeletonHit",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skeleton_hit",
-      "metadata": {
-        "files": [
-          "src/main/java/com/github/capedkarnage/goremod/procedures/SkeletonHitProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedure"
     },
     {
       "name": "SkeletonHit1",
@@ -290,6 +263,101 @@
       "path": "~/Particle/Creeper"
     },
     {
+      "name": "SpiderHit1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_hit_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goremod/particles/spider_hit_1.json",
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SpiderHit1Particle.java"
+        ]
+      },
+      "path": "~/Particle/Spider"
+    },
+    {
+      "name": "SpiderHit2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_hit_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SpiderHit2Particle.java",
+          "src/main/resources/assets/goremod/particles/spider_hit_2.json"
+        ]
+      },
+      "path": "~/Particle/Spider"
+    },
+    {
+      "name": "SpiderHit3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_hit_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goremod/particles/spider_hit_3.json",
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SpiderHit3Particle.java"
+        ]
+      },
+      "path": "~/Particle/Spider"
+    },
+    {
+      "name": "SpiderHit4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_hit_4",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/SpiderHit4Particle.java",
+          "src/main/resources/assets/goremod/particles/spider_hit_4.json"
+        ]
+      },
+      "path": "~/Particle/Spider"
+    },
+    {
+      "name": "SkeletonHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/procedures/SkeletonHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
       "name": "CreeperHit",
       "type": "procedure",
       "compiles": true,
@@ -300,6 +368,144 @@
           "src/main/java/com/github/capedkarnage/goremod/procedures/CreeperHitProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "SpiderHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/procedures/SpiderHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "EnderHit1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hit_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/EnderHit1Particle.java",
+          "src/main/resources/assets/goremod/particles/ender_hit_1.json"
+        ]
+      },
+      "path": "~/Particle/Ender"
+    },
+    {
+      "name": "EnderHit2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hit_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/EnderHit2Particle.java",
+          "src/main/resources/assets/goremod/particles/ender_hit_2.json"
+        ]
+      },
+      "path": "~/Particle/Ender"
+    },
+    {
+      "name": "EnderHit3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hit_3",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/EnderHit3Particle.java",
+          "src/main/resources/assets/goremod/particles/ender_hit_3.json"
+        ]
+      },
+      "path": "~/Particle/Ender"
+    },
+    {
+      "name": "EnderHit4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hit_4",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/client/particle/EnderHit4Particle.java",
+          "src/main/resources/assets/goremod/particles/ender_hit_4.json"
+        ]
+      },
+      "path": "~/Particle/Ender"
+    },
+    {
+      "name": "EnderHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/github/capedkarnage/goremod/procedures/EnderHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "amount",
             "type": "number"
@@ -349,6 +555,14 @@
           {
             "name": "Creeper",
             "children": []
+          },
+          {
+            "name": "Spider",
+            "children": []
+          },
+          {
+            "name": "Ender",
+            "children": []
           }
         ]
       },
@@ -365,12 +579,13 @@
     "author": "Creator, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
-    "serverSideOnly": false,
+    "serverSideOnly": true,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "com.github.capedkarnage.goremod"
   },
   "mcreatorVersion": 202400452410

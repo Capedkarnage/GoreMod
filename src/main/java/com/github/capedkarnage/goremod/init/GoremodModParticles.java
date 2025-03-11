@@ -9,6 +9,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import com.github.capedkarnage.goremod.client.particle.SpiderHit4Particle;
+import com.github.capedkarnage.goremod.client.particle.SpiderHit3Particle;
+import com.github.capedkarnage.goremod.client.particle.SpiderHit2Particle;
+import com.github.capedkarnage.goremod.client.particle.SpiderHit1Particle;
 import com.github.capedkarnage.goremod.client.particle.SkeletonHit4Particle;
 import com.github.capedkarnage.goremod.client.particle.SkeletonHit3Particle;
 import com.github.capedkarnage.goremod.client.particle.SkeletonHit2Particle;
@@ -17,6 +21,10 @@ import com.github.capedkarnage.goremod.client.particle.Hit4Particle;
 import com.github.capedkarnage.goremod.client.particle.Hit3Particle;
 import com.github.capedkarnage.goremod.client.particle.Hit2Particle;
 import com.github.capedkarnage.goremod.client.particle.Hit1Particle;
+import com.github.capedkarnage.goremod.client.particle.EnderHit4Particle;
+import com.github.capedkarnage.goremod.client.particle.EnderHit3Particle;
+import com.github.capedkarnage.goremod.client.particle.EnderHit2Particle;
+import com.github.capedkarnage.goremod.client.particle.EnderHit1Particle;
 import com.github.capedkarnage.goremod.client.particle.CreeperHit4Particle;
 import com.github.capedkarnage.goremod.client.particle.CreeperHit3Particle;
 import com.github.capedkarnage.goremod.client.particle.CreeperHit2Particle;
@@ -38,5 +46,13 @@ public class GoremodModParticles {
 		event.registerSpriteSet(GoremodModParticleTypes.CREEPER_HIT_2.get(), CreeperHit2Particle::provider);
 		event.registerSpriteSet(GoremodModParticleTypes.CREEPER_HIT_3.get(), CreeperHit3Particle::provider);
 		event.registerSpriteSet(GoremodModParticleTypes.CREEPER_HIT_4.get(), CreeperHit4Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.SPIDER_HIT_1.get(), SpiderHit1Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.SPIDER_HIT_2.get(), SpiderHit2Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.SPIDER_HIT_3.get(), SpiderHit3Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.SPIDER_HIT_4.get(), SpiderHit4Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.ENDER_HIT_1.get(), EnderHit1Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.ENDER_HIT_2.get(), EnderHit2Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.ENDER_HIT_3.get(), EnderHit3Particle::provider);
+		event.registerSpriteSet(GoremodModParticleTypes.ENDER_HIT_4.get(), EnderHit4Particle::provider);
 	}
 }
